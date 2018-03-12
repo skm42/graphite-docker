@@ -1,5 +1,7 @@
 FROM debian:jessie
 
+ENV GRAPHITE_TIME_ZONE=''
+
 RUN apt-get update \
     && apt-get -qy upgrade  \
     && DEBIAN_FRONTEND=noninteractive apt-get -qy install \
